@@ -9,7 +9,7 @@ let aciertos =0;
 let temporizador = false;
 let timer = 3;
 let tiempoRegresivoId = null;
-let timerInicial = timer;
+let tiempoInicial = timer
 
 
 //apuntando a documento html
@@ -39,10 +39,11 @@ if(timer == 0){
 
 //funcion bloquear tarjetas
 function bloquearTarjetas (){
-    for(let i = 0; i<= 15; i++){
+    for(let i = 0; i<=15; i++){
         let tarjetaBloqueada = document.getElementById(i);
-        tarjetaBloqueada.innerHTML = numeros [i];
+        tarjetaBloqueada.innerHTML = number [i];
         tarjetaBloqueada.disabled = true;
+        
     }
 }
 //funcion principal aumentar contador de tarjetas
